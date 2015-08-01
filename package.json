@@ -1,0 +1,47 @@
+{
+  "name": "breaks",
+  "version": "0.0.1",
+  "description": "Breakpoints and mediaqueries utility.",
+  "license": "MIT",
+  "repository": "idflood/breaks",
+  "author": {
+    "email": "david@stimul.ch",
+    "name": "David Mignot",
+    "url": "http://www.stimul.ch"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "compile": "babel src/breaks.js --modules umd --loose all --out-file lib/breaks.js",
+    "prepublish": "npm run compile && npm run uglify",
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS",
+    "uglify": "uglifyjs lib/breaks.js -cm > lib/breaks.min.js"
+  },
+  "main": "lib/breaks.js",
+  "keywords": [
+    "breakpoints",
+    "css",
+    "css-mediaquery"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "lodash.remove": "^3.1.0",
+    "string2mediaquery": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel": "^5.8.12",
+    "chai": "^3.2.0",
+    "karma": "^0.13.3",
+    "karma-babel-preprocessor": "^5.2.1",
+    "karma-chai": "^0.1.0",
+    "karma-jquery": "^0.1.0",
+    "karma-junit-reporter": "^0.3.3",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17",
+    "sinon": "^1.15.4",
+    "uglify-js": "^2.4.24"
+  }
+}
