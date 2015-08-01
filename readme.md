@@ -1,4 +1,4 @@
-# breaks [![Build Status](https://travis-ci.org/idflood/Breaks.svg?branch=master)](https://travis-ci.org/idflood/Breaks)
+# breaks [![Build Status](https://travis-ci.org/idflood/breaks.svg?branch=master)](https://travis-ci.org/idflood/breaks)
 
 >
 
