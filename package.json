@@ -1,6 +1,6 @@
 {
   "name": "breaks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Breakpoints and mediaqueries utility.",
   "license": "MIT",
   "repository": "idflood/breaks",
