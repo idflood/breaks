@@ -65,11 +65,12 @@ breaks.getData = function($target) {
   if (!$target || !$target.length || !($target instanceof jQuery)) {
     return false;
   }
+
   let font_family = $target.css('font-family');
   font_family = font_family.replace(/^['"]+|\\|(;\s?)+|['"]$/g, '');
 
   try {
-    return $.parseJSON(font_family);
+    return jQuery.parseJSON(font_family);
   }
   catch(e) {
 
